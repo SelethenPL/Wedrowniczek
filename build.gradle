@@ -13,15 +13,16 @@ buildscript {
     }
 }
 
-//allprojects {
-//    repositories {
-//        google()
-//        jcenter()
-//        maven {
-//            url 'https://maven.tomtom.com:8443/nexus/content/repositories/releases/'
-//        }
-//    }
-//}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven {
+            url "https://maven.tomtom.com:8443/nexus/content/repositories/releases/"
+        }
+    }
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
