@@ -2,4 +2,7 @@
     <string name="app_name">Wedrowniczek</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_view_"> Activity View </string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_maps">kamieniem go bez kitu</string>
+    <string name="loading_screen">Ładowanie...</string>
 </resources>
