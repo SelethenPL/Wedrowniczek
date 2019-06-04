@@ -19,8 +19,8 @@
         android:layout_marginBottom="206dp"
         android:allowUndo="false"
         android:background="@drawable/roundedbutton"
-        android:text="Szukaj"
         android:onClick="goToLoadActivity"
+        android:text="Szukaj"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +44,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,24 +61,26 @@
             android:layout_height="31dp"
             android:background="@drawable/roundedbutton"
             android:hint=""
+            android:inputType="text"
             android:textAlignment="center"
             android:textColorHighlight="#00000000"
             android:textColorLink="#00000000"
-            android:textDirection="firstStrongLtr"
-            android:inputType="text"
-     />
+            android:textDirection="firstStrongLtr" />
     </android.support.design.widget.TextInputLayout>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="446dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginBottom="366dp"
+        android:layout_width="398dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="356dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logo" />
 
 </android.support.constraint.ConstraintLayout>
