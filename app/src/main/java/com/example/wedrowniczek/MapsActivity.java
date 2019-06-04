@@ -1,7 +1,9 @@
 package com.example.wedrowniczek;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -70,5 +72,18 @@ public class MapsActivity extends FragmentActivity
         // TODO Zrób, zbliżenie na marker "YOU"
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(you));
+    }
+
+
+
+    public void ViewActivity1 (View view){
+        Intent intent = new Intent(this, View_Activity.class);
+        startActivity(intent);
+        this.finish();
+    }
+    public void ViewActivity2 (View view){
+        Intent intent = new Intent(this, View_Activity.class);
+        startActivity(intent);
+        this.finish();
     }
 }
