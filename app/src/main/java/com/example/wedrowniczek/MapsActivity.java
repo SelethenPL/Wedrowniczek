@@ -43,17 +43,32 @@ public class MapsActivity extends FragmentActivity
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        ArrayList<LatLng> marker = new ArrayList<>();
-        marker.add(new LatLng(52.407635, 16.933707));
-        marker.add(new LatLng(52.407427, 16.934769));
-        marker.add(new LatLng(52.409209, 16.931229));
+        LatLng you = new LatLng(52.407635, 16.933707);
 
-        for (LatLng i : marker) {
-            mMap.addMarker(new MarkerOptions()
-                    .position(i)
-                    .title("Nothing more"));
-        }
+        mMap.addMarker(new MarkerOptions()
+                .position(you)
+                .title("TUTAJ JESTES!"));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(marker.get(0)));
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(52.407427, 16.934769))
+                .title("Muzeum Archeologiczne"));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(52.409209, 16.931229))
+                .title("Zamek Królewski"));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(52.406595, 16.935145))
+                .title("Pomnik Koziołków"));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(52.408564, 16.929921))
+                .title("Muzeum Narodowe"));
+
+        // TODO Zrób, żeby się wyświetlały wszystkie nazwy bez klikania.
+        // TODO Zrób, żeby na kliknięcie popupa było przejście do następnej sceny.
+        // TODO Zrób, zbliżenie na marker "YOU"
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(you));
     }
 }
