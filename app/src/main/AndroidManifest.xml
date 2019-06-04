@@ -32,6 +32,9 @@
         <activity android:name=".LoadingActivity"
             android:label=""
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MapsActivity"
