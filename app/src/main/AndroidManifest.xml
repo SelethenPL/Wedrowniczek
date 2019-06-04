@@ -32,7 +32,17 @@
         <activity android:name=".LoadingActivity"
             android:label=""
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".View_Activity"
+            android:label="@string/title_activity_view_"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
