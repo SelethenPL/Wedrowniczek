@@ -69,9 +69,8 @@ public class MapsActivity extends FragmentActivity
 
         // TODO Zrób, żeby się wyświetlały wszystkie nazwy bez klikania.
         // TODO Zrób, żeby na kliknięcie popupa było przejście do następnej sceny.
-        // TODO Zrób, zbliżenie na marker "YOU"
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(you));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(you, 16.0f));
     }
 
 
