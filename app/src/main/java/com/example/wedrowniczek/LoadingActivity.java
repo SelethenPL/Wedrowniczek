@@ -34,7 +34,7 @@ public class LoadingActivity extends AppCompatActivity {
             }
         }
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
         this.finish();
     }
