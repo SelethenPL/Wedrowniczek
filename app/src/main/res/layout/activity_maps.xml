@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="ViewActivity1"
+
             android:background="@color/common_google_signin_btn_text_dark_pressed"
             tools:visibility="visible" />
 
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="ViewActivity2"
+            android:onClick="ViewActivity1"
             android:background="@color/common_google_signin_btn_text_dark_pressed"
             android:text="Muzeum Archeologiczne" />
 
@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="ViewActivity2"
             android:background="@color/common_google_signin_btn_text_dark_pressed"
             android:text="Zamek Królewski" />
 

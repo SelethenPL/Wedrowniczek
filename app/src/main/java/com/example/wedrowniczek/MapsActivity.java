@@ -77,12 +77,19 @@ public class MapsActivity extends FragmentActivity
 
     public void ViewActivity1 (View view){
         Intent intent = new Intent(this, View_Activity.class);
+        String msg = "1";
+
+        intent.putExtra("keyMessage", msg);
+
         startActivity(intent);
-        this.finish();
+
     }
     public void ViewActivity2 (View view){
         Intent intent = new Intent(this, View_Activity.class);
+        String msg = "2";
+
+        intent.putExtra("keyMessage", msg);
         startActivity(intent);
-        this.finish();
+
     }
 }
